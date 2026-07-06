@@ -130,7 +130,8 @@ export default function Home() {
       CALL_ABANDONED: "Abandonada",
       CALL_FAILED: "Falha",
       BUSY: "Ocupado",
-      CALL_NOT_ATTENDED: "Não Atendida"
+      CALL_NOT_ATTENDED: "Não Atendida",
+      CALL_CANCELED: "Cancelada"
     };
     return labels[status] || status;
   };
@@ -223,6 +224,7 @@ export default function Home() {
                   <Bar dataKey="CALL_CONFIRMED" stackId="a" fill={CORES.CALL_CONFIRMED} name="Atendida" />
                   <Bar dataKey="CALL_ABANDONED" stackId="a" fill={CORES.CALL_ABANDONED} name="Abandonada" />
                   <Bar dataKey="CALL_NOT_ATTENDED" stackId="a" fill={CORES.CALL_NOT_ATTENDED} name="Não Atendida" />
+                  <Bar dataKey="CALL_CANCELED" stackId="a" fill={CORES.OUTROS} name="Cancelada" />
                   <Bar dataKey="CALL_FAILED" stackId="a" fill={CORES.CALL_FAILED} name="Falha" />
                   <Bar dataKey="BUSY" stackId="a" fill={CORES.BUSY} name="Ocupado" />
                 </BarChart>
