@@ -1,0 +1,202 @@
+.main {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #2d3748;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filterContainer {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #edf2f7;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.inputGroup input {
+  padding: 0.70rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  color: #1a202c;
+  font-family: inherit;
+}
+
+.inputGroup input:focus {
+  border-color: #805ad5;
+  box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.15);
+}
+
+.searchButton {
+  grid-column: span 2;
+  background-color: #6b46c1;
+  color: #ffffff;
+  border: none;
+  padding: 0.875rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchButton:hover:not(:disabled) {
+  background-color: #553c9a;
+}
+
+.searchButton:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.searchButton:disabled {
+  background-color: #cbd5e0;
+  cursor: not-allowed;
+}
+
+.title {
+  font-size: 1.75rem;
+  color: #1a202c;
+  margin: 1.5rem 0;
+  font-weight: 700;
+  width: 100%;
+  max-width: 1200px;
+  text-align: left;
+}
+
+.emptyState {
+  background: #ffffff;
+  border: 2px dashed #e2e8f0;
+  border-radius: 12px;
+  padding: 3rem;
+  text-align: center;
+  color: #718096;
+  width: 100%;
+  max-width: 1200px;
+  font-size: 1.05rem;
+}
+
+.dashboardContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.chartWrapper {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #edf2f7;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.chartTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reportWrapper {
+  grid-column: span 2;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #edf2f7;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.tableResponsive {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.reportTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.reportTable th {
+  background-color: #f7fafc;
+  color: #718096;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 1rem;
+  border-bottom: 2px solid #edf2f7;
+}
+
+.reportTable td {
+  padding: 1rem;
+  border-bottom: 1px solid #edf2f7;
+  vertical-align: middle;
+}
+
+.reportTable tr:hover td {
+  background-color: #f8f5ff;
+}
+
+.boldText { font-weight: 600; color: #1a202c; }
+.subText { font-size: 0.8rem; color: #718096; margin-top: 2px; }
+.textMuted { color: #718096; }
+.textCapitalize { text-transform: capitalize; }
+
+.typeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.inbound { background-color: #ebf8ff; color: #2b6cb0; }
+.outbound { background-color: #faf5ff; color: #553c9a; }
+
+.statusBadge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+  width: fit-content;
+}
+
+.statusSuccess { background-color: #c6f6d5; color: #22543d; }
+.statusDanger { background-color: #fed7d7; color: #742a2a; }
+.statusNeutral { background-color: #edf2f7; color: #4a5568; }
