@@ -336,6 +336,8 @@ export default function Home() {
                 </div>
               </div>
             )}
+            <br />
+            <h5>Relatório desenvolvido por: Yuri Suporte Pleno.</h5>
           </div>
 
         </div>
