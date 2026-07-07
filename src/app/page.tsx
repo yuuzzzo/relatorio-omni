@@ -79,7 +79,8 @@ export default function Home() {
     apiDados.forEach(call => {
       const status = call.status;
 
-      if(call.status === "CALL_CONFIRMED" && call.type === "outbound"){
+      if(call.type === "outbound"){
+        // não faça nada se for ativa
       }else if (status in contagem) {
         contagem[status]++;
       }else {
@@ -110,7 +111,8 @@ export default function Home() {
         };
       }
 
-      if (call.status === "CALL_CONFIRMED" && call.type === "outbound"){
+      if (call.type === "outbound"){
+        // não faaça nada se for ativa
       }else if(status in agentes[nome]){
         agentes[nome][status]++;
       }
