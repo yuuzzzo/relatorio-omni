@@ -78,10 +78,12 @@ export default function Home() {
 
     apiDados.forEach(call => {
       const status = call.status;
-      if (status in contagem) {
+
+      if(call.status === "CALL_CONFIRMED" && call.type === "outbound"){
+      }else if (status in contagem) {
         contagem[status]++;
-      } else {
-        contagem.OUTROS++;
+      }else {
+        contagem.OUTRO++;
       }
     });
 
@@ -108,7 +110,8 @@ export default function Home() {
         };
       }
 
-      if (status in agentes[nome]) {
+      if (call.status === "CALL_CONFIRMED" && call.type === "outbound"){
+      }else if(status in agentes[nome]){
         agentes[nome][status]++;
       }
     });
