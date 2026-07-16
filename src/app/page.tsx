@@ -133,10 +133,10 @@ export default function Home() {
     const labels: Record<string, string> = {
       CALL_CONFIRMED: "Atendida",
       CALL_ABANDONED: "Abandonada",
-      CALL_FAILED: "Falha",
+      FAILED: "Falha",
       BUSY: "Ocupado",
       CALL_NOT_ATTENDED: "Não Atendida",
-      CALL_CANCELED: "Cancelada"
+      CALL_CANCELED: "Cancelada",
     };
     return labels[status] || status;
   };
