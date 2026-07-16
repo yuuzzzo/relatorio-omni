@@ -4,7 +4,7 @@ export async function BuscaEFiltraLigacoes(startDate: string, endDate: string): 
     const baseUrl = "https://api.omnismart.app/v1/report/calls";
     const token = "eyJhbGciOiJIUzI1NiJ9.YzVkNGM1NGZmYjI2NDFkNGQwZDE3ZTQ1OTY4MDlmMzA.wXFbkudAjzcUEs62Dv6x37eYqdI3Vxs9fW0vTf79OTo";
     const limit = "50";
-    const teams = "65cd0ad38dd8d6e80f1fea48";
+    const teams = "6a58e1ccd940fd34176cac43";
     
     const TAMANHO_LOTE = 10; 
 
